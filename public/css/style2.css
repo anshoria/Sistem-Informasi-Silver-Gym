@@ -1,0 +1,216 @@
+:root {
+    --primary: #0d6efd;
+    --secondary : #0d6dfdab;
+}
+
+body {
+    background-color:var(--bs-body-bg);
+}
+
+
+/*
+   * Sidebar
+   */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    /* rtl:raw:
+    right: 0;
+    */
+    bottom: 0;
+    /* rtl:remove */
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 48px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease;
+    border-right: 1px solid black;
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.nav-item .nav-link {
+    color: white;
+    font-size: 0.93rem;
+}
+.nav-item .nav-link.active {
+    background-color: var(--primary);
+}
+
+.nav-item .nav-link:hover {
+    background-color: var(--secondary);
+}
+
+.sidebar-heading {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+/*
+   * Navbar
+   */
+
+.navbar-brand {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 1.3rem;
+}
+
+.navbar .navbar-toggler {
+    top: 0.25rem;
+    right: 1rem;
+}
+
+.alert-1 {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    display: flex;
+    width: 320px;
+    align-items: center;
+    z-index: 1000;
+    animation: slideIn 0.8s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* tabel */
+tr td {
+    font-size: 0.9rem;
+}
+tr th {
+    font-size: 0.9rem;
+}
+
+/* profil admin */
+#profil-admin-2 {
+    display: none !important;
+}
+
+.profil-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profil-img img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+/* gallery settings */
+.gambar {
+    columns: 3;
+    column-gap: 15px;
+}
+
+.gambar .box {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.gambar .box img {
+    max-width: 100%;
+    border-radius: 3%;
+}
+
+/* tombol scrolldown */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 8px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* media queries */
+
+@media (max-width: 767px) {
+
+    .custom-col {
+        width: 50%;
+        float: left;
+    }
+
+    /* tabel */
+    .aksi a {
+        margin: 4px !important;
+        margin-top: 5px !important;
+    }
+    .aksi button {
+        margin: -2px !important;
+        margin-top: 2px !important;
+    }
+
+    /* detail gambar */
+    .row .detail {
+        margin-bottom: 1rem;
+    }
+    #sub-judul {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #profil-admin {
+        display: none !important;
+    }
+    #profil-admin-2 {
+        display: block !important;
+    }
+
+    .profil-admin-tengah {
+        display: block !important;
+    }
+
+    /* tombol laporan */
+    .tombol-laporan {
+        margin-top: 0.7rem !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .nav-link {
+        font-size: 1rem !important;
+    }
+
+    /* detail gambar */
+    .row .detail {
+        margin-bottom: 1rem;
+    }
+    /* tombol laporan */
+    .tombol-laporan {
+        margin-top: 0.7rem !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+    /* tombol laporan */
+    .tombol-laporan {
+        margin-top: 0.7rem !important;
+    }
+}

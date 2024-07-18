@@ -1,0 +1,485 @@
+:root {
+    --primary: #fa5246;
+}
+body {
+    background-color: black;
+}
+
+
+/* navbar */
+.navbar {
+    background-color: black;
+    border-bottom: 1px solid #7e2a24;
+}
+.navbar-brand img {
+    width: 60px;
+}
+.nav-link {
+    color: white !important;
+}
+.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+.nav-item .nav-link.active {
+    color: var(--primary) !important;
+}
+
+.list {
+    color: white;
+}
+
+nav {
+    background-color: #242629;
+}
+
+/* hero */
+.tombol {
+    background-color: var(--primary);
+    color: white;
+}
+.tombol:hover {
+    background-color: rgb(184, 77, 71);
+    color: white;
+}
+.silver {
+    color: gray;
+}
+
+.hero {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.garis-merah {
+    width: 100px;
+    border: 3px solid var(--primary);
+}
+.welcome {
+    font-size: 4rem;
+    color: white;
+}
+
+.lead {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card-header {
+    background-color: var(--primary);
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(40px);
+}
+.pricelist {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+}
+.pricing-header p {
+    font-size: 1.5rem;
+}
+.border-merah {
+    border: 2px solid var(--primary);
+    color: white;
+}
+.border-merah:hover {
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+}
+
+.selingan {
+    height: 40vh;
+    background-image: url('https://blogscdn.thehut.net/app/uploads/sites/478/2022/04/deadlift-variations-hero-min_1651238257.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selingan .content h1 {
+    font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
+    font-size: 3.5rem;
+}
+
+
+/* personal trainer */
+.personaltrainer {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pt {
+    width: 20rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pt:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    filter: none;
+}
+.pt img {
+    height: 22rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/* modal */
+
+/* gallery */
+.gallery {
+    padding-top: 5.5rem;
+    padding-bottom: 4rem;
+    background-color: silver;
+}
+.gambar {
+    columns: 3;
+    column-gap: 15px;
+}
+
+.gambar .box {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.gambar .box img {
+    max-width: 100%;
+    border-radius: 3%;
+}
+
+/* Kontak Kami */
+.kontak {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.kontak .map {
+    width: 100%;
+    height: 30rem;
+}
+
+/* footer */
+.sosmed .bi {
+    font-size: 1rem;
+}
+
+/* login dan register */
+.register-card {
+    margin-top: 3rem;
+}
+.form-register {
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+.form-register input {
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+.form-register select {
+    border-radius: 0;
+}
+
+.alert-2 {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    display: flex;
+    width: 330px !important;
+    align-items: center;
+    z-index: 1000;
+    animation: slideIn 0.8s ease-in-out;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* tips-tips */
+.tips {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.tips-card img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    border: none;
+}
+
+.tips-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tips-img img {
+    height: 500px;
+    width: 1200px;
+    object-fit: cover;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+
+/* profil */
+.profil-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profil-img img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 2px solid white;
+}
+/* topPresensi */
+.profil-img-topPresensi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profil-img-topPresensi img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.bg-top-presensi {
+    background-image: url('/img/top-presensi.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* login */
+.login-admin {
+    padding-top: 5rem;
+}
+
+/* presensi minggu ini member */
+.presensi.active {
+    background-color: #dc3545;
+}
+
+/* tombol scrolldown */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 8px;
+    right: 10px;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 8px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    nav {
+        background-color: transparent;
+    }
+
+    .navbar {
+        background-color: transparent;
+        border-bottom: none;
+    }
+
+    .navbar-nav {
+        padding-bottom: 3rem;
+    }
+
+    .sidebar {
+        background-color: black;
+        backdrop-filter: blur(10px);
+    }
+    .hero-body-member {
+        padding-top: 0rem !important;
+    }
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 4rem !important;
+        padding-bottom: 0rem !important;
+    }
+    .pesanalert {
+        margin-top: 1rem;
+    }
+    .hero img {
+        width: 280px;
+    }
+    .welcome {
+        font-size: 2.8rem;
+    }
+    .lead {
+        font-size: 1.2rem;
+    }
+    .pricelist {
+        padding-top: 3rem;
+    }
+    .pricing-header p {
+        font-size: 1.2rem !important;
+    }
+
+    .selingan {
+        height: 30vh;
+    }
+    .selingan .content h1 {
+        font-family: 'Lato', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    /* personal trainer */
+    .pt {
+        width: 22rem;
+        height: 30rem;
+    }
+
+    .personaltrainer {
+        padding-top: 3rem;
+    }
+
+    /* gallery */
+    .gallery {
+        padding-top: 3rem;
+    }
+    .gambar {
+        columns: 2;
+        column-gap: 10px;
+    }
+    .gambar .box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* login amd register page */
+
+    .form-login {
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+    }
+    .form-register {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .padding-atas {
+        padding-top: 0 !important;
+    }
+
+    .alert-2 {
+        width: 250px;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    /* tips */
+    .card-body .row {
+        gap: 1rem;
+    }
+
+    .tips-card {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .tips-card img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .tips-img-responsive {
+        margin-top: 0.6rem;
+    }
+    
+    /* profil */
+    .profil-img {
+        margin-top: 0 !important;
+    }
+
+    /* top-Presensi */
+    .profil-img-topPresensi img {
+        height: 50px !important;
+        width: 50px !important;
+        border-radius: 50%;
+        object-fit: cover;
+        overflow: hidden;
+        border: 1px solid white;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+    .navbar-nav {
+        padding-bottom: 3rem;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero img {
+        width: 280px;
+    }
+    .welcome {
+        font-size: 2.8rem;
+    }
+    .lead {
+        font-size: 1.2rem;
+    }
+    /* gallery */
+    .gambar {
+        columns: 3;
+        column-gap: 15px;
+    }
+    .gambar .box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* dropdown */
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
